@@ -1,1 +1,10 @@
+ Story 1 – SQL Query Practice
 
+This folder contains SQL queries 
+
+Topics covered:
+- SELECT queries
+- JOIN operations
+- GROUP BY and aggregations
+- HAVING clause
+- Subqueries
