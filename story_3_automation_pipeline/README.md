@@ -1,3 +1,319 @@
+
+
+
+
+# Exploratory Data Analysis (EDA) – Online Retail Dataset
+
+## Story 3.1 Objective
+
+The goal of this project is to perform **Exploratory Data Analysis (EDA)** on the cleaned e-commerce dataset to understand **sales patterns, customer behavior, product performance, and business trends**.
+
+## Dataset Overview
+
+The dataset used is the **Online Retail dataset** after data cleaning.
+
+**Dataset Size**
+
+* Rows: **401,604**
+* Columns: **15**
+
+**Key Columns Used**
+
+* quantity
+* invoicedate
+* unitprice
+* customerid
+* sales
+* Sales_Rank
+* revenue_per_unit
+* total_sales
+* year
+* month
+* high_value_order
+
+## Tools and Libraries
+
+The analysis was performed using:
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* SciPy (for statistical testing)
+
+## Data Understanding
+
+Initial exploration included:
+
+* Checking dataset structure using `head()`, `shape`, and `info()`
+* Generating descriptive statistics using `describe()`
+* Verifying missing values across all columns
+
+The dataset contained **no missing values after cleaning
+
+## Visualizations Performed
+
+Multiple visualizations were created to explore patterns in the data.
+
+### 1. Sales Distribution (Histogram)
+
+Shows the distribution of transaction sales values.
+
+**Insight**
+
+* Most orders have low sales values.
+* Only a small number of transactions generate very high revenue.
+
+### 2. Quantity Distribution (Box Plot)
+
+Shows how many items customers purchase per order.
+
+**Insight**
+
+* Most purchases involve small quantities.
+* Very large quantities indicate possible bulk buyers or wholesale transactions.
+* Negative quantities represent product returns.
+
+### 3. Unit Price Distribution (Histogram)
+
+Shows how product prices are distributed.
+
+**Insight**
+
+* Most products are low priced.
+* A few premium products have significantly higher prices.
+
+### 4. Quantity vs Sales (Scatter Plot)
+
+Shows the relationship between quantity purchased and total sales.
+
+**Insight**
+
+* Sales increase as quantity increases.
+* Some negative values indicate product returns or refunds.
+
+### 5. Correlation Matrix (Heatmap)
+
+Shows relationships between numerical variables.
+
+Key relationships analyzed:
+
+* quantity
+* unitprice
+* sales
+* revenue_per_unit
+* total_sales
+
+**Insight**
+
+* Quantity has a strong influence on total sales.
+* Unit price has relatively weaker influence.
+
+### 6. Monthly Average Quantity Trend (Line Chart)
+
+Analyzes how purchasing quantity changes over months.
+
+**Insight**
+
+* Customer purchasing behavior varies by month.
+
+### 7. High Value Orders Distribution (Count Plot)
+
+Shows how many transactions are high-value orders.
+
+**Insight**
+
+* High value orders are very rare.
+* Most transactions are normal-value purchases.
+
+### 8. Revenue per Unit Distribution (KDE Plot)
+
+Shows density of revenue generated per product unit.
+
+**Insight**
+
+* Most products generate small revenue per unit.
+* A small number of premium products generate high revenue.
+
+### 9. Monthly Revenue Share (Pie Chart)
+
+Shows how revenue is distributed across months.
+
+**Insight**
+
+* November generates the highest revenue.
+* February and April have the lowest revenue.
+
+## Statistical Analysis
+
+A **Pearson correlation test** was performed to analyze the relationship between quantity and sales.
+
+Correlation Result:
+
+```
+Correlation Coefficient: 0.916
+p-value: 0.0
+```
+
+**Interpretation**
+
+* Strong positive correlation between **quantity and sales**
+* Increasing the number of items sold significantly increases revenue.
+
+## Key Business Insights
+
+* Revenue is primarily driven by **quantity sold rather than price per item**.
+* Most transactions are **low-value purchases**, while high-value orders are rare.
+* **Bulk buyers contribute significantly to revenue**.
+* A small number of **premium products generate high revenue per unit**.
+* **Seasonality exists in sales**, with the highest revenue occurring in the final months of the year.
+
+## Output
+
+The dataset used for this analysis is stored as:
+cleaned_data.csv
+
+#  3.2 Python–SQL Integration 
+
+## Objective
+
+The goal of this task is to integrate **Python with a MySQL database** to store and analyze the cleaned e-commerce dataset.
+Python is used to connect to the database, upload data, execute SQL queries, and compare SQL performance with pandas.
+
+## Technologies Used
+
+* Python
+* Pandas
+* SQLAlchemy
+* PyMySQL
+* MySQL Database
+
+## Dataset
+
+The dataset used is the **cleaned e-commerce dataset** generated during the data cleaning phase.
+
+Rows: **401,604**
+Columns: **15**
+
+## Database Connection
+
+A connection was established between Python and MySQL using SQLAlchemy.
+
+##  Load CSV into Database
+
+The cleaned dataset was loaded from CSV and inserted into a MySQL table.
+
+
+Table created: **sales_data**
+
+##  SQL Queries Executed
+
+Several SQL queries were executed using `pandas.read_sql()` to analyze the data.
+
+### 1. Total Revenue
+
+Calculates total sales generated by the business.
+
+Insight: Helps understand overall business performance.
+
+### 2. Total Orders
+
+Counts the number of unique transactions.
+
+Insight: Measures the level of business activity.
+
+### 3. Revenue by Country
+
+Shows which countries generate the most revenue.
+
+Insight: Helps identify strong markets for expansion.
+
+### 4. Most Sold Products
+
+Identifies products with the highest total quantity sold.
+
+Insight: Useful for product promotion and inventory planning.
+
+### 5. Monthly Revenue
+
+Shows revenue trends across months.
+
+Insight: Helps identify seasonal sales patterns.
+
+### 6. High Value Orders
+
+Counts orders with high purchase value.
+
+Insight: Helps identify premium customer behavior.
+
+### 7. Average Order Value
+
+Calculates average spending per order.
+
+Insight: Indicates customer purchasing power.
+
+### 8. Top Customers
+
+Identifies customers with the highest total spending.
+
+Insight: Useful for loyalty programs and retention strategies.
+
+### 9. Premium Products
+
+Shows products with the highest revenue per unit.
+
+Insight: Helps optimize pricing strategy.
+
+### 10. Returned Orders
+
+Counts transactions with negative quantity.
+
+Insight: Helps measure product return rates.
+
+## Performance Comparison
+
+Execution time of **pandas vs SQL** was compared.
+
+ result:
+
+* Pandas execution time: ~0.03 seconds
+* SQL execution time: ~0.44 seconds
+
+This shows that pandas can sometimes process in-memory operations faster, while SQL is useful for large database queries.
+
+
+## Error Handling
+
+Try–except blocks were used to handle potential database errors.
+
+
+The database connection is properly closed using:
+
+```python
+engine.dispose()
+```
+
+## Key Business Insights
+
+* The majority of revenue comes from **a few countries**, especially the United Kingdom.
+* Some products generate significantly higher sales than others.
+* A small group of customers contributes a large share of revenue.
+* High-value orders are rare but important for profitability.
+* Seasonal trends exist in monthly revenue.
+
+## Output
+
+The dataset is stored in the MySQL table:
+
+```text
+sales_data
+```
+
+This enables efficient querying and integration with analytics tools.
+
+
+
 # Story 3.3 - Automation Data Pipeline
 
 This script automates the data processing workflow.

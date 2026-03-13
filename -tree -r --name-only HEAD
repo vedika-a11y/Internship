@@ -1,0 +1,11 @@
+*   [33ma93e1e8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Resolve merge conflicts and keep clean project structure
+[31m|[m[32m\[m  
+[31m|[m * [33m4b26ab1[m[33m ([m[1;31morigin/safety-backup[m[33m, [m[1;32msafety-backup[m[33m)[m Reorganized Story 2 and Story 3 project structure
+[31m|[m * [33mf9b66f6[m Reorganized Story 2 and Story 3 project structure
+* [32m|[m [33m009d23f[m Finalize Story 2 and Story 3 structure
+* [32m|[m [33m9503f6f[m Rename story 4.1: hotel_analysis.ipynb to story_4_1_hotel_analysis.ipynb
+* [32m|[m [33mf1a9d69[m Update and rename story 3.3: data_pipeline.py to data_pipeline.py
+* [32m|[m [33m345a163[m Rename story 3.2: python-sql.ipynb to story_3_2_python_sql.ipynb
+* [32m|[m [33mcc60ad7[m Rename story 3.1:EDA_analysis.ipynb.ipynb to story_3_1_eda_analysis.ipynb
+* [32m|[m [33m2b6afe8[m Rename story 2.2: data cleaning.ipynb to story_2_2_data_cleaning.ipynb
+* [32m|[m [33m88062c3[m Rename story 2.1:Python pandas basic.ipynb to story_2_1_python_pandas_basics.ipynb
