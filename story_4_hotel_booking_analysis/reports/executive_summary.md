@@ -1,31 +1,61 @@
-# Executive Summary
+Executive Summary
+Project Overview
+This project focuses on analyzing hotel booking data to understand how customers book hotels and what factors affect business performance.
+The dataset includes information like booking dates, hotel type, customer details, stay duration, pricing (ADR), and booking channels.
+The main objective was to study patterns related to cancellations, demand variation, customer behavior, and revenue opportunities.
+The analysis helps in understanding how hotels can improve their planning, reduce losses, and increase overall efficiency.
+Key Findings
+1. Cancellation Behavior
+A significant portion of total bookings are cancelled.
+Cancellation rates are not the same for all hotel types — some hotels face more cancellations than others.
+High cancellations directly affect revenue and create problems in room planning.
 
-## Project Overview
-This project analyzes hotel booking demand data to identify key business patterns related to cancellations, seasonal booking demand, customer segments, booking channels, and revenue opportunity.
+ This indicates that hotels need better strategies to manage and reduce cancellations.
 
-## Main Findings
+2. Lead Time Impact
+Bookings made well in advance (high lead time) have a higher chance of being cancelled.
+Customers who book closer to the arrival date are less likely to cancel.
+This shows that early bookings are less reliable.
 
-### 1. Cancellation Behavior
-The analysis shows that cancellation rates vary by hotel type, indicating that some hotel categories experience greater booking instability than others.
+ Hotels can reduce this risk by introducing reminders, partial payments, or stricter policies for early bookings.
 
-### 2. Lead Time Risk
-Bookings made far in advance tend to show a higher likelihood of cancellation. This suggests that long lead-time bookings may require stronger booking policies or reminders.
+3. Seasonal Demand
+Hotel demand changes throughout the year and is clearly seasonal.
+Certain months show very high booking volumes, while some months have low demand.
+Peak seasons generate more revenue, while off-seasons may lead to lower occupancy.
 
-### 3. Seasonal Demand
-Demand is not evenly distributed across the year. Some months experience significantly higher booking volume and stronger revenue potential.
+ Hotels should plan pricing, staffing, and offers based on seasonal demand patterns.
 
-### 4. Market Segment Value
-A few market segments contribute a larger share of bookings and estimated revenue, making them especially important for business strategy.
+4. Customer Segments
+Most bookings are made by individual (transient) customers.
+The number of repeated guests is relatively low compared to new customers.
+This means customer retention is not very strong.
 
-### 5. Distribution Channel Quality
-Booking channels differ not just in volume but also in cancellation rate, meaning some channels generate more stable business than others.
+ Hotels can improve this by focusing on loyalty programs and better customer experience.
 
-## Recommendations
-1. Review cancellation policies for high-risk booking categories.
-2. Improve pricing and staffing during peak demand periods.
-3. Focus marketing efforts on high-value customer segments.
-4. Evaluate booking channels based on both volume and stability.
-5. Use lead time patterns to design better retention and reminder strategies.
+5. Booking Channels
+Bookings come from multiple channels like online platforms, direct bookings, and corporate sources.
+Some channels bring a higher number of bookings but also show higher cancellation rates.
+Other channels provide fewer bookings but are more stable.
 
-## Conclusion
-The hotel booking dataset provides clear evidence that customer booking behavior is influenced by timing, segment, and booking channel. These findings can support better operational planning and revenue management.
+ It is important to focus on channels that give both good volume and reliable bookings.
+
+6. Pricing (ADR) Insights
+Average Daily Rate (ADR) varies depending on demand, season, and customer type.
+Prices are generally higher during peak demand periods and lower during off-season.
+This shows that pricing is directly linked to demand patterns.
+
+ Proper pricing strategy can help maximize revenue without affecting occupancy.
+
+Recommendations
+Improve cancellation policies, especially for bookings with high lead time
+Use dynamic pricing strategies based on demand and season
+Focus on increasing repeat customers through loyalty programs
+Choose booking channels that provide more stable and reliable bookings
+Use reminders, confirmations, or incentives to reduce cancellations
+Plan resources (staff, rooms) based on seasonal demand trends
+
+Conclusion
+The analysis shows that hotel booking behavior depends on multiple factors like timing, customer type, pricing, and booking channels.
+Understanding these patterns can help hotels make better decisions and improve their performance.
+By applying these insights, hotels can reduce cancellations, increase occupancy, and generate higher revenue in a more efficient way.
