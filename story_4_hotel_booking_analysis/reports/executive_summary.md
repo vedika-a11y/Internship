@@ -1,4 +1,5 @@
 Executive Summary
+
 Project Overview
 This project focuses on analyzing hotel booking data to understand how customers book hotels and what factors affect business performance.
 The dataset includes information like booking dates, hotel type, customer details, stay duration, pricing (ADR), and booking channels.
