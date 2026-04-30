@@ -1,11 +1,13 @@
-Data Exploration and Preprocessing Summary
+### Story 9 – Data Exploration and Preprocessing Summary
 
-In this task, I worked with the Titanic dataset to understand the basics of data exploration and preprocessing. I started by loading the dataset and analyzing its structure using functions like head(), info(), and describe(). This helped me understand the different columns, data types, and overall distribution of the data.
+In this task, I worked on the Titanic dataset to understand the basics of data exploration and preprocessing.
 
-Next, I checked for missing values and duplicate records. I observed that some columns like Age and Embarked had missing values, while the Cabin column had a large number of missing entries. To handle this, I filled the missing values in the Age column using the median and in the Embarked column using the mode. The Cabin column was removed as it was not useful due to excessive missing data.
+I began by loading the dataset and analyzing its structure using functions like `head()`, `info()`, and `describe()`. This helped me get a clear understanding of the dataset, including the different columns, their data types, and overall statistics.
 
-After cleaning the data, I focused on understanding the problem. The target variable in this dataset is Survived, which indicates whether a passenger survived or not. This makes it a classification problem, as the output is in binary form (0 or 1). I selected relevant features such as passenger class, age, gender, fare, and embarkation point, as these are important factors that can influence survival.
+Next, I checked for missing values and duplicate records in the dataset. I found that some columns such as **Age** and **Embarked** had missing values, while the **Cabin** column contained a large number of missing entries. To handle this, I filled the missing values in the Age column using the median, as it is less affected by extreme values. For the Embarked column, I used the mode since it is a categorical feature. The Cabin column was dropped because it had too many missing values and was not useful for basic analysis.
 
-To prepare the data for machine learning, I converted categorical variables like Sex and Embarked into numerical format using one-hot encoding. This step is necessary because machine learning models require numerical input.
+After cleaning the data, I focused on understanding the problem. The target variable in this dataset is **Survived**, which indicates whether a passenger survived or not. This makes it a classification problem because the output is binary (0 or 1). I selected important features such as passenger class (Pclass), gender (Sex), age, fare, and embarkation point, as these are key factors that influence survival chances.
 
-Finally, I created a cleaned version of the dataset with all preprocessing steps applied and saved it for use in future tasks. This dataset is now ready for building and training machine learning models.
+To prepare the dataset for machine learning, I converted categorical variables like **Sex** and **Embarked** into numerical format using one-hot encoding. This step is important because machine learning models require numerical input rather than text values.
+
+Finally, I created a cleaned version of the dataset with all preprocessing steps applied and saved it as **titanic_cleaned.csv**. This cleaned dataset will be used for further machine learning tasks in the next steps.
