@@ -1,7 +1,6 @@
 
 # Story 13.1 – Working with Text in Python
 
-## Project Summary
 
 In this task, text data from a Women's E-Commerce Clothing Reviews dataset was analyzed using Python. The objective was to learn the basics of text processing and extract meaningful insights from customer review data.
 
@@ -22,21 +21,7 @@ The top 20 most frequent words were displayed using a bar chart, making it easie
 * Matplotlib
 * WordCloud
 
-## Methodology
 
-1. Loaded the customer review dataset.
-2. Selected the review text column for analysis.
-3. Removed missing review entries.
-4. Converted all text to lowercase.
-5. Removed punctuation and special characters.
-6. Removed extra spaces from the text.
-7. Combined all reviews into a single text corpus.
-8. Split text into individual words.
-9. Calculated word frequencies using Counter.
-10. Removed common stop words.
-11. Identified the top 20 most frequent meaningful words.
-12. Visualized results using a bar chart.
-13. Generated a Word Cloud for text visualization.
 
 ## Key Findings
 
@@ -53,35 +38,20 @@ The analysis revealed that customers frequently discussed:
 
 These words indicate that customers mainly focus on product fit, comfort, sizing, fabric quality, appearance, and overall satisfaction when reviewing clothing products.
 
-## Output Explanation
-
-### 1. Dataset Inspection
-
-The dataset structure, dimensions, column information, and missing values were examined to understand the quality of the data before analysis.
-
-### 2. Text Cleaning Output
-
-The review text became standardized by:
-
-* Converting all text to lowercase.
-* Removing punctuation marks.
-* Removing extra spaces.
-* Removing missing records.
-
-This improved consistency and reduced noise in the analysis.
-
-### 3. Word Frequency Analysis
-
-The frequency count showed how often each word appeared in customer reviews. This helped identify the most commonly discussed topics.
-
-### 4. Top 20 Words Bar Chart
-
-A bar chart was created to display the twenty most frequently occurring meaningful words. Higher bars represented words that appeared more often in customer reviews.
-
-### 5. Word Cloud Visualization
-
-A Word Cloud was generated to visually represent word frequency. Larger words indicate higher occurrence within the review text. This visualization quickly highlighted customer interests and common discussion themes.
 
 ## Conclusion
 
 This task demonstrated the complete workflow of basic text analytics, including text cleaning, preprocessing, word frequency analysis, stop word removal, and visualization. The results provided valuable insights into customer opinions and purchasing experiences while introducing fundamental Natural Language Processing (NLP) concepts.
+
+
+
+Story 13.2 – Simple Sentiment Analysis
+
+
+This project performs Sentiment Analysis on customer reviews from a women's e-commerce clothing review dataset using Python, Pandas, and TextBlob. The objective is to analyze review text and automatically determine whether customer feedback is Positive, Negative, or Neutral.
+
+The dataset was loaded and cleaned by selecting the Review.Text column and handling missing values. The TextBlob Natural Language Processing (NLP) library was used to calculate the sentiment polarity score for each review. Based on the polarity value, a custom function classified reviews into Positive, Negative, or Neutral categories.
+
+After sentiment classification, the sentiment labels were added as a new column to the dataset. The distribution of sentiments was then analyzed using frequency counts and visualized with a bar chart to understand overall customer opinion.
+
+output:The bar chart clearly showed that the majority of customer reviews were Positive, indicating high customer satisfaction with the products.
